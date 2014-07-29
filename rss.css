@@ -1,0 +1,42 @@
+﻿body {
+    font-size:14px;
+}
+
+.rssheader{
+    font-family:'Comic Sans MS','Times New Roman',Arial,Verdana;
+    font-size:1.2em;
+    background-color:#409ad1;
+    color:#fff;
+    padding-left:5px;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+.rssWelcome{
+    background-color:#395061;
+    color:#8faebb;
+    font-size:1em;
+    padding-left:5px;    
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.feeds li {
+    background-color:#FAEFD2;
+    color:#a57240;
+    font-size:1em;
+    margin-top:5px;
+    padding-bottom:60px;
+    padding-top:10px;
+    padding-left:10px;
+    border-radius:8px;
+}
+
+.feeds ul
+{
+list-style-type: none;
+}
+
+.feeds li a {   
+margin-right:50em;
+}

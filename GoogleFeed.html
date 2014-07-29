@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GOOGLE FEED API</title>    
+    <title>GOOGLE FEED API</title>
+
+    <link rel="stylesheet" type="text/css" href="rss.css">
+
     <script type="text/javascript" src="http://www.google.com/jsapi">
-	</script>
-	<script type="text/javascript" src="googlefeed.js">
-	</script>
+    </script>
+    <script type="text/javascript" src="googlefeed.js">
+    </script>
 
 </head>
-<body>  
+<body>
+
+    <header class="rssheader">
+        Rss Feed Reader 1.0!       
+    </header>
+
+    <div class="rssWelcome">
+        <label>Welcome to Rss Feed Reader</label>
+        <label>Enter the Feed URL</label>
+        <input type="text" id="InputURL" />
+        <button id="GO">Go!</button>
+    </div>
 
     <div>
 
-        <label>Enter the Feed URL</label>
-        <input type="text" id="InputURL"/>
-        <button id="GO">Go!</button>
-
-        <div id="feed"></div>
 
 
     </div>
-  
+
+    <div id="feed" class="feeds"></div>
+
 </body>
 </html>
