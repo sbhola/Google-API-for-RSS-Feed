@@ -7,7 +7,7 @@
     font-size:1.2em;
     background-color:#409ad1;
     color:#fff;
-    padding-left:5px;
+    /*padding-left:5px;*/
     padding-top:20px;
     padding-bottom:20px;
 
@@ -16,7 +16,7 @@
     background-color:#395061;
     color:#8faebb;
     font-size:1em;
-    padding-left:5px;    
+    /*padding-left:5px;*/    
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -38,5 +38,5 @@ list-style-type: none;
 }
 
 .feeds li a {   
-margin-right:50em;
+margin-right:30em;
 }
