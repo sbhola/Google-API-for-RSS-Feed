@@ -1,6 +1,6 @@
 ﻿var xmlhttp;
 var requestObj;
-var rssoutput = " <h2> ";
+var rssoutput = " <h3> ";
 
 window.onload = function () {
     var clickObj = document.getElementById("GO");
@@ -24,8 +24,10 @@ function RSS(rssUrl) {
 
             var thefeeds = feedpointer.responseData.feed.entries;
             rssoutput += feedpointer.responseData.feed.title;
-            rssoutput += " </h2 </br> ";
+            rssoutput += " </h3 </br> ";
+            rssoutput += "<p class=\"feedDescription\">";
             rssoutput += feedpointer.responseData.feed.description;
+            rssoutput += "</p>";
             rssoutput += "<ul>"
             parseFeed(thefeeds);
             
@@ -44,11 +46,12 @@ function RSS(rssUrl) {
 
 function parseFeed(thefeeds) {
     for (var i = 0; i < thefeeds.length; i++)
-        rssoutput += "<li><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a> " + thefeeds[i].publishedDate + " </br> <p>" + thefeeds[i].contentSnippet + "</p></li>";
+        rssoutput += "<li><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a> " + "<p class=\"pull-right\">" + thefeeds[i].publishedDate + "</p>" + " </br> <p>" + thefeeds[i].contentSnippet + "</p></li>";
     rssoutput += "</ul>";
 
     var feedcontainer = document.getElementById("feed");
     //feedcontainer.appendChild(rssoutput);
+    //var childNode = document.createElement("");
     feedcontainer.innerHTML = rssoutput;    
 }
 
